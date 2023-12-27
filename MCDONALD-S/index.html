@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald-s</title>
+    <style>
+    #container{
+        border: 1px solid red;
+        padding: 2%;
+        
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        font-weight: bolder ;
+        width:20% ;
+        height: 20%;
+        
+    }
+    button{
+        width:50%;
+        padding: 2%;
+        cursor: pointer;
+        
+    }
+   
+
+        .food-image {
+            display: none;
+            max-width: 100px;
+            max-height: 100px;
+            margin: 5px;
+        }
+        .imagecontainer{
+            display: none;
+            max-width: 100px;
+            max-height: 100px;
+            margin: 5px;
+     }   
+        
+    </style>
+</head>
+<body>
+     <div id="container">
+        <h1  style="color: palevioletred ;" >Food items</h1>
+        <label  style="color: red;" >
+            <input type="checkbox" name="food" value="Burger" onchange="toggleImage(this)"> Burger
+        </label>
+        <br>
+        <label  style="color:blueviolet;" >
+            <input type="checkbox" name="food" value="Pizza" onchange="toggleImage(this)"> Pizza
+        </label>
+        <br>
+        <label  style="color: pink;" >
+            <input type="checkbox" name="food" value="frenchfrise" onchange="toggleImage(this)"> frenchfrise
+        </label>
+        <br>
+        <label  style="color: turquoise;" >
+            <input type="checkbox" name="food" value="ColdDrink" onchange="toggleImage(this)"> ColdDrink
+        </label>
+        <br>
+        <button  style="color: green;"  
+         onclick="order()"> Order </button> 
+     </div>
+     <div class="imagecontainer" id="imagecontainerID">
+        <div id="imagecontainerID2"></div>
+       <img id="BurgerImage" class="food-image" src="https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg" alt="Burger Image">
+        <img id="PizzaImage" class="food-image" src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg" alt="Pizza Image">
+        <img id="frenchfriseImage" class="food-image" src="https://thumbs.dreamstime.com/b/french-fries-17661700.jpg" alt="Fries Image">
+        <img id="ColdDrinkImage" class="food-image" src="https://media.istockphoto.com/id/655123574/photo/soft-drinks-splashing.jpg?s=612x612&w=0&k=20&c=iZcaMSEuzxLRy2lpnUw9NhnTcOhYNgxA3poBbjCsSSc=" alt="Drink Image">
+    </div>
+ 
+</body>
+</html>
+<script src="index.js"></script>
